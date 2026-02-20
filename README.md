@@ -1,16 +1,19 @@
 # LLM Controlled Generation
 
-This course explores three complementary approaches to controlling the output of Large Language Models, progressing from token-level constraints to multi-sample selection to iterative self-correction with formal verification feedback.
+This homework explores three complementary approaches to controlling the output of Large Language Models, progressing from token-level constraints to multi-sample selection to iterative self-correction with formal verification feedback.
 
 ## Overview
 
-The course is organized in three parts, each building on concepts from the previous one:
+The homework is organized in three parts, each building on concepts from the previous one:
 
 | Part | Folder | Topic | Key idea |
 |---|---|---|---|
 | 1 | [`structured_generation/`](structured_generation/) | Structured Generation | Constrain each token at generation time using regex-compiled FSMs |
 | 2 | [`meta_generation/`](meta_generation/) | Meta-Generation | Generate multiple samples and select the best using ranking strategies |
 | 3 | [`self_correction/`](self_correction/) | Self-Correction | Iteratively refine code using verifier error feedback and tree search |
+
+
+📄 **Complete instructions:** [llm_controlled_generation.pdf](llm_controlled_generation.pdf)
 
 ### Part 1 — Structured Generation
 
@@ -40,8 +43,8 @@ Some tasks require **provably correct** code. You will build a tree-search refin
 
 ### Installation
 
+Clone the repo and then run:
 ```bash
-git clone https://github.com/<your-org>/llm_controlled-generation.git
 cd llm_controlled-generation
 uv sync
 ```
